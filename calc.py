@@ -20,12 +20,15 @@ def add(a, b):
 # b -- subtrahend
 def sub(a, b):
     return a - b
+def sub(a, b):
+    return a - b
 
 # Multiply function
 # a -- multiplicand
 # b -- multiplier
-def mult(a, b):
-    return a * b
+
+def mod(a, b):
+    return a % b
 
 # Divide function
 # a -- dividend
@@ -67,6 +70,8 @@ while (True):
             print "Product: ", mult(a, b)
         elif (op == "/"):
             print "Quotient: ", div(a, b)
+ 		elif (op == "%"):
+            print "Quotient: ", mod(a, b)
         else:
             print "Invalid operation..."
 
